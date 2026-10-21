@@ -1,0 +1,121 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #062E27;
+    color: #F0FDF4;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 460px;
+    padding: 30px;
+    background: #0B3B32;
+    border: 1px solid #35665A;
+    border-radius: 14px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #5EE0B0;
+    margin-bottom: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #C3D8D0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 16px 0 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #082F28;
+    color: #F0FDF4;
+    border: 1px solid #568477;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #A7C2B8;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #5EE0B0;
+    border-color: #5EE0B0;
+}
+
+button, .boton-secundario {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 7px;
+    background: #168566;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, .boton-secundario:hover {
+    background: #116B52;
+}
+
+.separador {
+    border-top: 1px solid #35665A;
+    margin: 25px 0;
+}
+
+.mensaje {
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.error {
+    background: #572B2B;
+    color: #FECACA;
+}
+
+.exito {
+    background: #14532D;
+    color: #BBF7D0;
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 22px;
+    }
+}
